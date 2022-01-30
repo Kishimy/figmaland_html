@@ -22,15 +22,31 @@
             margin: 0;
             max-width: 1439px;
             margin: 0 auto;
+            font-family: "Roboto-Regular";
+            color: #FFFFFF;
         }
-
+        .generalBack {
+            background: url("../figmaland_html/img/Gradient.png") #252B42 no-repeat;
+        }
+        .generalText {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 33px;
+            letter-spacing: 0.1px;
+            margin-bottom: 17px;
+        }
+        .alignCenter {
+            text-align: center;
+        }
         /* -------------------- header -------------------- */
         .header {
-            background: linear-gradient(39.97deg, #EF2779 0.79%, #7834BE 79.29%);
+            
             padding: 52px 40px 0px;
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-bottom: 180px;
         }
         .headerIcon{
             margin-right: 282px;
@@ -41,15 +57,17 @@
             font-family: "Roboto-Regular";
         }
         .headerButton {
+            font-family: "Roboto-Regular";
+            color: #FFFFFF;
             background: none;
             border: none;
-            color: #FFFFFF;
             font-size: 15px;
             line-height: 27px;
             margin-right: 41px;
             flex-grow: 1;
             flex-shrink: 1;
             padding: 0px;
+            cursor: pointer;
         }
         .headerButton:hover {
             color: #ffffff8a;
@@ -83,40 +101,233 @@
             border-radius: 35px;
             flex-grow: 1;
             flex-shrink: 1;
+            border: none;
+            cursor: pointer;
         }
         .headerSubmit:hover {
             color: #aa0f4f;
             background: #ffffffda;
         }
+        /* -------------------- main -------------------- */
+        .main {
+           display: flex;
+        }
+        .mainInput {
+            width: 780px;
+            border-top: 12px solid #E2E3E5;
+            border-bottom: 12px solid #E2E3E5;
+            border-right: 23px solid #E2E3E5;
+            border-left: 1px solid #E2E3E5;
+            border-radius: 3px;
+            margin-bottom: -1px;
+        }
+        .mainScreen {
+            margin-right: 87px;
+            margin-bottom: 212px;
+        }
+        .mainDesc {
+            padding-top: 50px;
+        }
+        .mainDesc__title {
+            font-family: "Roboto-Medium";
+            font-style: normal;
+            font-weight: 900;
+            font-size: 55px;
+            line-height: 65px;
+            letter-spacing: 0.2px;
+            max-width: 321px;
+            margin-bottom: 27px;
+        }
+        .mainDesc__text {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+            max-width: 298px;
+            margin-bottom: 70px;
+        }
+        .mainDesc__button {
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 33px;
+            text-align: center;
+            letter-spacing: 0.1px;
+            padding: 16px 58px;
+            background: #FFFFFF;
+            border-radius: 35px;
+            color: #38A3F1;
+            border: none;
+            cursor: pointer;
+        }
+        .mainDesc__button:hover {
+            background: #ffffffda;
+            color: #38a4f1be;
+        }
+
+        /* -------------------- features -------------------- */
+        .featuresSection {
+            background:  #252B42;;
+        }
+        .featuresSection__supTitle {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 33px;
+            letter-spacing: 0.1px;
+            margin-bottom: 17px;
+        }
+        .featuresSection__title {
+            font-size: 46px;
+            line-height: 57px;
+            letter-spacing: 0.2px;
+            margin-bottom: 27px;
+        }
+        .featuresSection__desc {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+            margin-bottom: 100px;
+        }
+        .features {
+            display: flex;
+            justify-content: center;
+        }
+        .features__item {
+            max-width: 255px;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 33,333333333333%;
+            margin-right: 52px;
+        }
+        .features__item:last-child {
+            margin-right: 0px;
+        }
+        .features__title {
+            display: flex;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+        .feature__image {
+            margin-right: 10px;
+        }
+        .features__title_text {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 33px;
+            letter-spacing: 0.1px;
+            margin-bottom: 17px;
+        }
+        .features__desc {
+            font-size: 18px;
+            line-height: 27px;
+            letter-spacing: 0.2px;
+        } 
     </style>  
 </head>
 <body>
-    <div class="header">
-        <div class="headerIcon">
-            <img src="../figmaland_html/img/Figmaland.png">
+    <div class="generalBack">
+        <div class="header">
+            <div class="headerIcon">
+                <img src="../figmaland_html/img/Figmaland.png">
+            </div>
+            <div class="headerMenu">
+                <button class="headerButton">
+                    Home
+                </button>
+                <button class="headerButton">
+                    Product
+                </button>
+                <button class="headerButton">
+                    Pricing
+                </button>
+                <button class="headerButton">
+                    About
+                </button>
+                <button class="headerButton">
+                    Contact
+                </button>
+            </div>
+            <div>
+                <form name="login">
+                    <input  class="headerInput" type="text" placeholder="Your Email" name="name" required>
+                    <button type="submit" class="headerSubmit">Subscribe</button> 
+                </form>
+            </div>
         </div>
-        <div class="headerMenu">
-            <button class="headerButton">
-                Home
-            </button>
-            <button class="headerButton">
-                Product
-            </button>
-            <button class="headerButton">
-                Pricing
-            </button>
-            <button class="headerButton">
-                About
-            </button>
-            <button class="headerButton">
-                Contact
-            </button>
+        <div class="main">
+            <div class="mainScreen">
+                <div>
+                    <input  class="mainInput" type="text" placeholder="" name="name" required>
+                </div>
+                <img src="../figmaland_html/img/SCREENMASK.png">
+            </div>
+            <div class="mainDesc">
+                <div class="mainDesc__title">
+                    We focus on ergonomics
+                </div>
+                <div class="mainDesc__text">
+                    Most calendars are designed for teams. Slate is designed for freelancers
+                </div>
+                <button class="mainDesc__button">
+                    Try For Free
+                </button>
+            </div>
         </div>
-        <div>
-            <form name="login">
-                <input  class="headerInput" type="text" placeholder="Your Email" name="name" required>
-                <button type="submit" class="headerSubmit">Subscribe</button> 
-            </form>
+        <div class="featuresSection">
+            <div class="alignCenter">
+                <div class="featuresSection__supTitle">
+                    At your fingertips
+                </div>
+                <div class="featuresSection__title">
+                    Features
+                </div>
+                <div class="featuresSection__desc">
+                    Most calendars are designed for teams. <br> Slate is designed for freelancers
+                </div>
+            </div>
+            <div class="features">
+                <div class="features__item">
+                    <div class="features__title">
+                        <div class="feature__image">
+                            <img src="../figmaland_html/img/circlefeature.svg">
+                        </div>
+                        <div class="features__title_text">
+                            The best products start with Sketch
+                        </div>
+                    </div>
+                    <div class="features__desc">
+                        Slate helps you see how many more days you need to work to reach your financial goal.
+                    </div>
+                </div>
+                <div class="features__item">
+                    <div class="features__title">
+                        <div class="feature__image">
+                            <img src="../figmaland_html/img/organize.svg">
+                        </div>
+                        <div class="features__title_text">
+                            Fastest way to organize
+                        </div>
+                    </div>
+                    <div class="features__desc">
+                        Slate helps you see how many more days you need to work to reach your financial goal.
+                    </div>
+                </div>
+                <div class="features__item">
+                    <div class="features__title">
+                        <div class="feature__image">
+                            <img src="../figmaland_html/img/work.svg">
+                        </div>
+                        <div class="features__title_text">
+                            Work better together
+                        </div>
+                    </div>
+                    <div class="features__desc">
+                        Slate helps you see how many more days you need to work to reach your financial goal.
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
