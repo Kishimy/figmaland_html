@@ -70,17 +70,15 @@
     }
     .section__button {
         font-family: "Roboto-Medium";
-        font-style: normal;
         font-size: 16px;
         font-weight: 500;
         letter-spacing: 0.2px;
-        margin: 0 auto;
-        margin-bottom: 80px;
+        margin: 0 auto 80px;
         max-width: 236px;
         width: 100%;
-        color: #FFFFFF;;
+        color: #FFFFFF;
         padding: 19px 38px;
-        background: #38A3F1;;
+        background: #38A3F1;
         border-radius: 35px;
         border: none;
         cursor: pointer;
@@ -290,7 +288,7 @@
         width: 100%;
         letter-spacing: 0.2px;
         padding: 19px 35px;
-        color: #FFFFFF;;
+        color: #FFFFFF;
         padding: 17px 139px;
         background: #EF2779;
         border-radius: 35px;        
