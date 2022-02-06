@@ -347,4 +347,12 @@
         letter-spacing: 0.2px;
         padding: 10px;
     }
+
+    /* -------------------- testimonials -------------------- */
+    .testimonialsSection {
+        padding-top: 111px;
+    }
+    .testimonials__title {
+        margin-bottom: 90px;
+    }
     
