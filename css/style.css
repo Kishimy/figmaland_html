@@ -17,6 +17,7 @@
         max-width: 1439px;
         margin: 0 auto;
         font-family: "Roboto-Regular";
+        font-size: 16px;
         color: #FFFFFF;
     }
     .generalBack {
@@ -344,5 +345,56 @@
         line-height: 27px;
         letter-spacing: 0.2px;
         padding: 10px;
+    }
+
+    /* -------------------- testimonials -------------------- */
+    .testimonialsSection {
+        padding-top: 111px;
+    }
+    .testimonials__title {
+        margin-bottom: 90px;
+    }
+    .testimonials__image {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .testimonials__text {
+        font-weight: bold;
+        line-height: 20px;
+        margin: 0 auto;
+        text-align: center;
+        letter-spacing: 0.2px;
+        margin-bottom: 60px;
+        max-width: 683px;
+       
+    }
+    .testimonials__profile {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 80px;
+        
+    }
+    .profile__avatar {
+        margin-right: 13px;
+    }
+    .profile__desc {
+        padding: 4px 0;
+    }
+    .profile__title {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.1px;
+        margin-bottom: 2px;
+    }
+    .profile__text {
+        font-size: 15px;
+        line-height: 27px;
+        letter-spacing: 0.2px;
+    }
+    .testimonials__button {
+        max-width: 280px;
+        width: 100%;
+        margin-bottom: 100px;
     }
     
