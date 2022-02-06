@@ -30,12 +30,64 @@
         letter-spacing: 0.1px;
         margin-bottom: 17px;
     }
-    .alignCenter {
+    .sectionCenter {
         text-align: center;
+        max-width: 296px;
+        margin: 0 auto;
     }
+    .sectionCenter_width {
+        max-width: 531px;
+    }
+    .section__supTitle {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 33px;
+        letter-spacing: 0.1px;
+        margin-bottom: 17px;
+    }
+    .section__supTitle_bottom {
+        margin-bottom: 10px;
+    }
+    .section__title {
+        font-size: 46px;
+        line-height: 57px;
+        letter-spacing: 0.2px;
+        margin-bottom: 27px;
+    }
+    .section__title_bottom {
+        margin-bottom: 42px;
+    }
+    .section__desc {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        margin-bottom: 100px;
+    }
+    .containerButton {
+        display: flex;
+    }
+    .section__button {
+        font-family: "Roboto-Medium";
+        font-style: normal;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+        max-width: 236px;
+        width: 100%;
+        color: #FFFFFF;;
+        padding: 19px 38px;
+        background: #38A3F1;;
+        border-radius: 35px;
+        border: none;
+        cursor: pointer;
+    }
+
     /* -------------------- header -------------------- */
     .header {
-        
         padding: 52px 40px 0px;
         display: flex;
         justify-content: center;
@@ -157,27 +209,6 @@
     .featuresSection {
         background:  #252B42;;
     }
-    .featuresSection__supTitle {
-        font-style: normal;
-        font-weight: bold;
-        font-size: 22px;
-        line-height: 33px;
-        letter-spacing: 0.1px;
-        margin-bottom: 17px;
-    }
-    .featuresSection__title {
-        font-size: 46px;
-        line-height: 57px;
-        letter-spacing: 0.2px;
-        margin-bottom: 27px;
-    }
-    .featuresSection__desc {
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 20px;
-        letter-spacing: 0.2px;
-        margin-bottom: 100px;
-    }
     .features {
         display: flex;
         justify-content: center;
@@ -197,7 +228,7 @@
         margin-bottom: 20px;
         align-items: center;
     }
-    .feature__image {
+    .features__image {
         margin-right: 10px;
     }
     .features__title_text {
@@ -212,5 +243,108 @@
         font-size: 18px;
         line-height: 27px;
         letter-spacing: 0.2px;
-        margin-bottom: 90px;
+        margin-bottom: 95px;
     }
+
+    /* -------------------- light -------------------- */
+    .lightSection {
+        padding-top: 110px;
+    }
+    .light__image {
+        margin: 0px 203px 133px;
+    }
+
+    /* -------------------- lightForm -------------------- */
+    .lightForm__desc {
+        font-size: 18px;
+        line-height: 33px;
+        letter-spacing: 0.1px;
+        margin-bottom: 34px;
+    }
+    .lightForm {
+        justify-content: center;
+        align-items: center;
+        max-width: 353px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .lightInput {
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.1px;
+        width: 100%;
+        border: 1px solid #E8E8E8;
+        color: #18171D;
+        background: #EFEFEF;
+        border: 1px solid #E8E8E8;
+        border-radius: 39px;
+        padding: 19px 35px;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    .lightSubmit {
+        font-family: "Roboto-Medium";
+        font-style: normal;
+        font-size: 16px;
+        font-weight: 500;
+        width: 100%;
+        letter-spacing: 0.2px;
+        padding: 19px 35px;
+        color: #FFFFFF;;
+        padding: 17px 139px;
+        background: #EF2779;
+        border-radius: 35px;        
+        flex-grow: 1;
+        flex-shrink: 1;
+        border: none;
+        cursor: pointer;
+    }
+    .lightForm__item {
+        margin-bottom: 12px;
+    }
+    .lightForm__item:last-child {
+        margin-bottom: 104px;
+    }
+
+    /* -------------------- partners -------------------- */
+    
+    .partnersSection {
+        padding-top: 130px;
+    }
+    .partners__subtitle {
+        font-size: 16px;
+        margin-bottom: 103px;
+    }
+    .partners__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px -26px;
+    }
+    .partners {
+        margin: 0px auto;
+        max-width: 818px;
+    }
+    .partners__item {
+        text-align: center;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 33.333333333333%;
+        padding: 0px 26px;
+        margin-bottom: 83px;
+    }
+    .partners__name {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 25px;
+    }
+    .partners__logo {
+        margin-bottom: 25px;
+    }
+    .partners__desc {
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: 0.2px;
+        padding: 10px;
+    }
+    
