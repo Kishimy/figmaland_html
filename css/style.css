@@ -56,6 +56,9 @@
         letter-spacing: 0.2px;
         margin-bottom: 27px;
     }
+    .section__title_active {
+        color: #252B42;
+    }
     .section__title_bottom {
         margin-bottom: 42px;
     }
@@ -65,6 +68,10 @@
         line-height: 20px;
         letter-spacing: 0.2px;
         margin-bottom: 100px;
+    }
+    .section__desc_active {
+        color: #252B42;
+        font-weight: bold;
     }
     .containerButton {
         display: flex;
@@ -83,6 +90,9 @@
         border-radius: 35px;
         border: none;
         cursor: pointer;
+    }
+    .section__button_margin {
+        margin-bottom: 0px;
     }
 
     /* -------------------- header -------------------- */
@@ -366,13 +376,11 @@
         letter-spacing: 0.2px;
         margin-bottom: 60px;
         max-width: 683px;
-       
     }
     .testimonials__profile {
         display: flex;
         justify-content: center;
         margin-bottom: 80px;
-        
     }
     .profile__avatar {
         margin-right: 13px;
@@ -397,4 +405,175 @@
         width: 100%;
         margin-bottom: 100px;
     }
+
+    /* -------------------- pricing -------------------- */
+    .pricing {
+        padding-top: 110px;
+        padding-bottom: 100px;
+    }
+    .pricingList {
+        display: flex;
+        gap: 0 50px;
+        max-width: 1105px;
+        margin: 0 auto;
+    }
+    .pricing__item {
+        padding: 43px 40px 40px;
+        background: #FFFFFF;
+        border: 1px solid #DEDEDE;
+        box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+        border-radius: 10px;   
+        flex: 1 1 calc((100%/3) - 50px);   
+        justify-content: center;   
+    }
+    .pricing__item_active {
+        background: linear-gradient(39.97deg, #EF2779 0.79%, #7834BE 79.29%);
+    }
+    .pricingItem__title {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 33px;
+        letter-spacing: 0.1px;    
+        color: #252B42;  
+        margin-bottom: 3px;
+    }
+    .pricing__item_active .pricingItem__title,
+    .pricing__item_active .pricingItem__subTitle,
+    .pricing__item_active .desc__price,
+    .pricing__item_active .desc__dollar,
+    .pricing__item_active .desc__comment {
+        color: #FFFFFF;
+    }
+    .pricingItem__subTitle {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.1px;
+        color: #374754;
+        margin-bottom: 30px;
+    }
+    .pricingItem__desc {
+        display: flex;
+    }
+    .desc__price {
+        font-weight: 900;
+        font-size: 55px;
+        line-height: 65px;
+        letter-spacing: 0.2px;
+        color: #252B42;
+        margin-right: 10px;
+    }
+    .desc__currency {
+        padding-top: 2px;
+        margin-bottom: 40px;
+    }
+    .desc__dollar {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 33px;
+        letter-spacing: 0.1px;
+        color: #252B42;
+    }
+    .desc__comment {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.1px;
+        color: #374754;
+    }
+    .pricingItem__button {
+        background: #FFFFFF;
+        color: #EF2779;
+        margin-bottom: 0px;
+    }
     
+/* -------------------- contact -------------------- */
+    .contact {
+        background: #D6EBFF;
+        padding: 95px 0px 85px;
+    }
+    .contactSection {
+        display: flex;
+        justify-content: center;
+    }
+    .contactForm {
+        background: #FFFFFF;
+        border: 0.65371px solid #DDDDDD;
+        box-shadow: 0px 8.49823px 12.4205px rgba(0, 0, 0, 0.07);
+        border-radius: 13.0742px;
+        padding: 26px 41px;
+        max-width: 400px;
+        width: 100%;
+        margin-right: 65px;
+    }
+    .contactForm__title {
+        font-weight: bold;
+        font-size: 14.3816px;
+        line-height: 22px;
+        color: #252B42;
+        margin-bottom: 31px;
+        text-align: center;
+    }
+    .contactForm__input {
+        background: #F5F5F5;
+        border: 1px solid #FFFFFF;
+        border-radius: 39px;
+        font-size: 9.80565px;
+        line-height: 10px;
+        margin-bottom: 31px;
+        min-height: 36px;
+        width: 100%;
+        padding: 0 13px;
+    }
+    .contactForm__message {
+        min-height: 126px;
+        border-radius: 0px;
+        resize: vertical;
+        font-family: "Roboto-Regular";
+        font-size: 10px;
+        color: #374754;
+        padding-top: 15px;
+    }
+    .contactForm__submit {
+        line-height: 16px;
+        background: #EF2779;
+        border-radius: 35px;
+        color: #FFFFFF;
+        border: none;
+        max-width: 95px;
+        width: 100%;
+        height: 35px;
+        cursor: pointer;
+    }
+    .contactDesc__info {
+        margin-bottom: 74px;
+        max-width: 264px;
+        width: 100%;
+    }
+    .contactItem {
+        display: flex;
+        margin-bottom: 10px;
+    }
+    .contactItem__img {
+        margin-right: 20px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 27px;
+    }
+    .contactItem__text {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 18px;
+        color: #252B42;
+        padding: 10px;
+    }
+    .contactDesc__social {
+        display: flex;
+    }
+    .contactLogo {
+        margin-right: 32px;
+    }
+    .contactLogo:last-child {
+        margin-right: 0px;
+    }
